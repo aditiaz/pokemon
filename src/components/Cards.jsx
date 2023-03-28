@@ -19,12 +19,12 @@ const Cards = () => {
 
   return (
     <div className="flex justify-center">
-      <div className=" grid grid-cols-2 lg:grid-cols-5 gap-3 m-auto mt-20  mb-5 w-[90%]">
+      <div className=" grid grid-cols-2 lg:grid-cols-5 gap-3 m-auto mt-1  w-[90%]">
         {pokemons?.map((e) => (
           <div
             onClick={() => navigate(`/Detail/${e.name}`)}
             key={e.name}
-            className=" text-black p-2  h-80  bg-[#aeac24] text-center"
+            className=" text-black p-2  h-78  bg-[#aeac24] text-center"
           >
             <img
               src={`${img}${e.url.split("/").filter(Boolean).pop()}.svg`}
@@ -35,7 +35,7 @@ const Cards = () => {
           </div>
         ))}
       </div>
-      <div className="fixed bottom-6   w-[20%] flex justify-center ">
+      <div className="fixed bottom-5   w-[20%] flex justify-center ">
         <div className="flex w-[40%] md:w-[10%] justify-around ">
           {offset == 0 ? (
             <></>
