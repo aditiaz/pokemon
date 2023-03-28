@@ -34,7 +34,7 @@ const Chart = () => {
       /> */}
 
       <div style={{ textAlign: "center", marginTop: "100px" }}>Bar Chart of Flavors</div>
-      <Bar
+      {/* <Bar
         style={{ height: "500px", marginTop: "50px" }}
         data={flavorsData}
         xField="name"
@@ -45,7 +45,7 @@ const Chart = () => {
           position: "top",
           offsetY: -10,
         }}
-      />
+      /> */}
     </div>
   );
 };
