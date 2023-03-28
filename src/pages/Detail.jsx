@@ -9,6 +9,7 @@ export const Detail = () => {
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
     return response.data;
   });
+  console.log(pokemon);
 
   const { name, stats, sprites } = pokemon;
 
